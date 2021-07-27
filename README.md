@@ -1,5 +1,6 @@
 
 # IPO Investment Calculator
+```
 
 Batwa , A NoteKeeper To help You manage IPO transactions
 Option 
@@ -30,3 +31,4 @@ npm run build
 
 Prod
 npm start
+```
