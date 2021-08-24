@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering components renders correctly enzyme 1`] = `
+<div>
+  <h4>
+    Your Account Balance
+  </h4>
+  <h1
+    id="balance"
+  >
+    Rs 
+    100000
+  </h1>
+</div>
+`;
+
+exports[`snapshots Add Bid snapshot 1`] = `
+<div>
+  <h3>
+    Add Bid
+  </h3>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-control"
+    >
+      <label
+        htmlFor="text"
+      >
+        Select IPO name
+      </label>
+      <input
+        onChange={[Function]}
+        placeholder="Enter IPO name..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-control"
+    >
+      <label
+        htmlFor="amount"
+      >
+        Enter Number of Lots 
+        <br />
+      </label>
+      <input
+        onChange={[Function]}
+        placeholder="Enter number of lots..."
+        type="number"
+        value={1}
+      />
+      <label
+        htmlFor="amount"
+      >
+        Price Of one lot 
+        <br />
+      </label>
+      <input
+        onChange={[Function]}
+        placeholder="Enter amount..."
+        type="number"
+        value=""
+      />
+    </div>
+    <button
+      className="btn"
+    >
+      Bid
+    </button>
+  </form>
+</div>
+`;
+
+exports[`snapshots App snapshot 1`] = `
+<GlobalProvider>
+  <div
+    className="App"
+  >
+    <Header />
+    <Balance />
+    <BalanceInvested />
+    <CurrentBid />
+    <AddBid />
+  </div>
+</GlobalProvider>
+`;
+
+exports[`snapshots Balance snapshot 1`] = `
+<div>
+  <h4>
+    Your Account Balance
+  </h4>
+  <h1
+    id="balance"
+  >
+    Rs 
+    100000
+  </h1>
+</div>
+`;
+
+exports[`snapshots BalanceInvested snapshot 1`] = `
+<div>
+  <div
+    className="inc-exp-container"
+  >
+    <div>
+      <h4>
+        Balance
+      </h4>
+      <p
+        className="money plus"
+      >
+        +Rs 
+        100000
+      </p>
+    </div>
+    <div>
+      <h4>
+        Invested
+      </h4>
+      <p
+        className="money minus"
+      >
+        -Rs 
+        0
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshots Current Bids list snapshot 1`] = `
+<Fragment>
+  <h3>
+    Current Bid
+  </h3>
+  <ul
+    className="list"
+    id="list"
+  >
+    <p>
+      No Bids Available. Lets Start Biding
+    </p>
+  </ul>
+</Fragment>
+`;
