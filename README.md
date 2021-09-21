@@ -1,6 +1,5 @@
 
 # IPO Investment Calculator
-```
 
 Batwa , A NoteKeeper To help You manage IPO transactions
 Option 
@@ -12,23 +11,37 @@ Users can add a new bid.
 
 change config.env file in config folder
 
+```
 npm install
 cd client npm install
 cd ..
 
+```
+
 Run front and backend
+
+```
 npm run dev
 
+```
+
 Backend only
+
+```
 npm run server
 
-Frontend only
-npm run client
+```
 
+Frontend only
+
+```
+npm run client
 Build client
 cd client
 npm run build
+```
 
 Prod
+```
 npm start
 ```
