@@ -10,6 +10,7 @@ dotenv.config({ path: './config/config.env' });
 connectDB();
 
 const users = require('./routes/users');
+const uploadProfile = require('./routes/uploadProfile');
 
 const app = express();
 
@@ -20,6 +21,7 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 app.use('/api/v1/users', users);
+app.use('/api/v1/upload', uploadProfile);
 
 // if(process.env.NODE_ENV === 'production') {
 //   app.use(express.static('batwa-frontend/build'));

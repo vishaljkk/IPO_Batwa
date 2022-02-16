@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-const UserSchema = new mongoose.Schema({
-    
+const UserSchema = new mongoose.Schema({ 
     fullName: {
         type: String,
         trim: true,
@@ -23,7 +22,7 @@ const UserSchema = new mongoose.Schema({
     emailAddress: {
         type: String,
         trim: true,
-        required: [true, 'Please Enter']
+        required: [true, 'Please Enter Email Address']
     },
     exp:{
         type: Number,
@@ -43,7 +42,7 @@ const UserSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    },
+    }
 });
 
 module.exports = mongoose.model('User', UserSchema);
