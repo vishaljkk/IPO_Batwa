@@ -7,6 +7,8 @@ const connectDB = require('./config/db');
 
 dotenv.config({ path: './config/config.env' });
 
+global.__basedir = __dirname;
+
 connectDB();
 
 const users = require('./routes/users');
@@ -15,6 +17,7 @@ const uploadProfile = require('./routes/uploadProfile');
 const app = express();
 
 app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 
 if(process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));

@@ -9,10 +9,9 @@ const upload = async (req, res) => {
     }
 
     res.status(200).send({
-      message: "Uploaded the file successfully: " + req.file.originalname,
+      message: "Uploaded the file successfully: " + req.file,
     });
   } catch (err) {
-    console.log(err);
 
     if (err.code == "LIMIT_FILE_SIZE") {
       return res.status(500).send({
@@ -21,7 +20,7 @@ const upload = async (req, res) => {
     }
 
     res.status(500).send({
-      message: `Could not upload the file: ${req.file.originalname}. ${err}`,
+      message: `Could not upload the file: ${req.file}. ${err}`,
     });
   }
 };
